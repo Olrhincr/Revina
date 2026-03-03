@@ -77,7 +77,6 @@ body {
   background-color: #2c3638;
   padding: 10px 10px 10px 10px;
   border-radius: 30px;
-  border: none;
   cursor: pointer;
   font-family: "poppins", sans-serif;
   font-size: 16px;
@@ -85,6 +84,11 @@ body {
   height: 44px;
   justify-content: center;
   align-items: center;
+}
+.nav-container .btn:hover {
+  background-color: #ffffff;
+  color: #a27b5a;
+  border: 2px solid #a27b5a;
 }
 
 /* ..............................HERO SECTION */
@@ -345,6 +349,13 @@ body {
   color: aqua;
   font-size: 24px;
 }
+
+.social-icons i:hover {
+  color: #d6770b;
+  transform: translateY(-3px);
+}
+
+/* ------------------------------- mobile */
 
 @media (max-width: 768px) {
   .nav-container {
