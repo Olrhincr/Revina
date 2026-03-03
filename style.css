@@ -17,7 +17,6 @@ body {
 .nav-container {
   display: flex;
   align-items: center;
-  background-color: none;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -28,7 +27,6 @@ body {
 .logo {
   font-size: 24px;
   color: #2c3638;
-  background-color: none;
   font-family: "MuseoModerno", cursive;
   font-weight: 600;
 }
@@ -116,6 +114,7 @@ body {
   font-weight: 600;
   color: #ddd7c9;
 }
+
 .hero p {
   font-size: 20px;
   color: #ddd7c9;
@@ -259,7 +258,7 @@ body {
 .sub-text h1 {
   font-size: 64px;
   font-family: "Comfortaa", cursive;
-  font-weight: 600px;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -345,4 +344,65 @@ body {
 .social-icons i {
   color: aqua;
   font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .about-container,
+  .collection-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .about-text,
+  .collection-text {
+    width: 100%;
+  }
+
+  .about-container img,
+  .collection-container img {
+    width: 100%;
+  }
+
+  .sub {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .sub-text h1 {
+    font-size: 32px;
+  }
+
+  .sub-text p {
+    font-size: 16px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
 }
