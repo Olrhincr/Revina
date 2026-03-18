@@ -317,10 +317,13 @@ body {
 .footer-container h3 {
   font-family: "MuseoModerno", cursive;
   font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .footer-container p {
   font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
 }
 
 .footer .logo {
@@ -338,10 +341,11 @@ body {
 
 .footer-link li,
 .footer-legal li {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 20px;
   list-style: none;
   cursor: pointer;
+  font-weight: 100;
 }
 
 .footer-link a {
